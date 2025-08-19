@@ -4,9 +4,9 @@ esp8266:
     version: recommended
 
 # Enable logging
-logger:
-  level: debug # makes uart stream available in esphome logstream
-  baud_rate: 0 # disable logging over uart
+#logger:
+#  level: info # makes uart stream available in esphome logstream
+#  baud_rate: 0 # disable logging over uart
 
 uart:
   id: uart_mower
