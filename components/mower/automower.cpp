@@ -245,141 +245,141 @@ namespace esphome
             switch (val)
             {
             case 0x0010:
-                status = "error";
-                status_message = "Außerhalb des Arbeitsbereichs";
-                break;
+              status = "Fehler";
+              status_message = "Außerhalb des Arbeitsbereichs";
+              break;
             case 0x0012:
-                status = "error";
-                status_message = "Niedrige Batteriespannung";
-                break;
+              status = "Fehler";
+              status_message = "Niedrige Batteriespannung";
+              break;
             case 0x001e:
-                status = "error";
-                status_message = "Schneidsystem blockiert";
-                break;
+              status = "Fehler";
+              status_message = "Schneidsystem blockiert";
+              break;
             case 0x03EA:
-                status = "mowing";
-                status_message = "Mähvorgang läuft";
-                break;
+              status = "Mähen";
+              status_message = "Mähvorgang läuft";
+              break;
             case 0x0006:
-                status = "error";
-                status_message = "Linker Radmotor blockiert";
-                break;
+              status = "Fehler";
+              status_message = "Linker Radmotor blockiert";
+              break;
             case 0x0008:
-                status = "error";
-                status_message = "Rechter Radmotor blockiert";
-                break;
+              status = "Fehler";
+              status_message = "Rechter Radmotor blockiert";
+              break;
             case 0x000C:
-                status = "error";
-                status_message = "Kein Schleifensignal";
-                break;
+              status = "Fehler";
+              status_message = "Kein Schleifensignal";
+              break;
             case 0x001A:
-                status = "error";
-                status_message = "Ladestation blockiert";
-                break;
+              status = "Fehler";
+              status_message = "Ladestation blockiert";
+              break;
             case 0x0022:
-                status = "error";
-                status_message = "Mäher angehoben";
-                break;
+              status = "Fehler";
+              status_message = "Mäher angehoben";
+              break;
             case 0x0034:
-                status = "error";
-                status_message = "Kein Kontakt zur Ladestation";
-                break;
+              status = "Fehler";
+              status_message = "Kein Kontakt zur Ladestation";
+              break;
             case 0x0036:
-                status = "error";
-                status_message = "PIN abgelaufen";
-                break;
+              status = "Fehler";
+              status_message = "PIN abgelaufen";
+              break;
             case 0x03E8:
-                status = "mowing";
-                status_message = "Verlässt Ladestation";
-                break;
+              status = "Mähen";
+              status_message = "Verlässt Ladestation";
+              break;
             case 0x03EE:
-                status = "mowing";
-                status_message = "Mähen starten";
-                break;
+              status = "Mähen";
+              status_message = "Mähen starten";
+              break;
             case 0x03F0:
-                status = "mowing";
-                status_message = "Mähen gestartet";
-                break;
+              status = "Mähen";
+              status_message = "Mähen gestartet";
+              break;
             case 0x03F4:
-                status = "mowing";
-                status_message = "Mähen starten 2";
-                break;
+              status = "Mähen";
+              status_message = "Mähen starten 2";
+              break;
             case 0x03F6:
-                status = "docked";
-                status_message = "Ladevorgang";
-                break;
+              status = "In Ladestation";
+              status_message = "Ladevorgang";
+              break;
             case 0x03F8:
-                status = "docked";
-                status_message = "Warten auf Timer 2";
-                break;
+              status = "In Ladestation";
+              status_message = "Warten auf Timer 2";
+              break;
             case 0x1016:
-                status = "docked";
-                status_message = "Warten auf Timer";
-                break;
+              status = "In Ladestation";
+              status_message = "Warten auf Timer";
+              break;
             case 0x0400:
-                status = "docked";
-                status_message = "Parken in Ladestation";
-                break;
+              status = "In Ladestation";
+              status_message = "Parken in Ladestation";
+              break;
             case 0x040C:
-                status = "mowing";
-                status_message = "Quadrat-Modus";
-                break;
+              status = "Mähen";
+              status_message = "Quadrat Modus";
+              break;
             case 0x040E:
-                status = "error";
-                status_message = "Festgefahren";
-                break;
+              status = "Fehler";
+              status_message = "Festgefahren";
+              break;
             case 0x0412:
-                status = "returning";
-                status_message = "Suche läuft";
-                break;
+              status = "Rückkehr";
+              status_message = "Suche läuft";
+              break;
             case 0x0414:
-                status = "paused";
-                status_message = "Stop";
-                break;
+              status = "Pausiert";
+              status_message = "Stop";
+              break;
             case 0x0418:
-                status = "docked";
-                status_message = "Andocken";
-                break;
+              status = "In Ladestation";
+              status_message = "Andocken";
+              break;
             case 0x041A:
-                status = "mowing";
-                status_message = "Verlässt Ladestation";
-                break;
+              status = "Mähen";
+              status_message = "Verlässt Ladestation";
+              break;
             case 0x041C:
-                status = "error";
-                status_message = "Fehler";
-                break;
+              status = "Fehler";
+              status_message = "Fehler";
+              break;
             case 0x0420:
-                status = "idle";
-                status_message = "Bereit (Warten auf Einsatz)";
-                break;
+              status = "Bereit";
+              status_message = "Bereit (Warten auf Einsatz)";
+              break;
             case 0x0422:
-                status = "mowing";
-                status_message = "Folgt Begrenzungskabel";
-                break;
+              status = "Mähen";
+              status_message = "Folgt Begrenzungskabel";
+              break;
             case 0x0424:
-                status = "returning";
-                status_message = "N-Signal gefunden";
-                break;
+              status = "Rückkehr";
+              status_message = "N Signal gefunden";
+              break;
             case 0x0426:
-                status = "error";
-                status_message = "Festgefahren";
-                break;
+              status = "Fehler";
+              status_message = "Festgefahren";
+              break;
             case 0x0428:
-                status = "returning";
-                status_message = "Suche läuft";
-                break;
+              status = "Rückkehr";
+              status_message = "Suche läuft";
+              break;
             case 0x042E:
-                status = "mowing/returning";
-                status_message = "Folgt Leitkabel";
-                break;
+              status = "Mähen Rückkehr";
+              status_message = "Folgt Leitkabel";
+              break;
             case 0x0430:
-                status = "returning";
-                status_message = "Folgt Begrenzungsschleife";
-                break;
+              status = "Rückkehr";
+              status_message = "Folgt Begrenzungsschleife";
+              break;
             default:
-                status = "error";
-                status_message = "STATUS_" + formatHex(val);
-                break;
+              status = "Fehler";
+              status_message = "STATUS_" + formatHex(val);
+              break;
             }
             status_text_sensor_->publish_state(status);
             status_message_text_sensor_->publish_state(status_message);
