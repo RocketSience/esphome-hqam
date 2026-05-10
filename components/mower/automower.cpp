@@ -268,6 +268,10 @@ namespace esphome
               status = "Fehler";
               status_message = "Rechter Radmotor blockiert";
               break;
+            case 0x0018:
+              status = "Fehler";
+              status_message = "Schlupf bei Rad";
+              break;          
             case 0x000C:
               status = "Fehler";
               status_message = "Kein Schleifensignal";
